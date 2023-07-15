@@ -1,0 +1,41 @@
+.zindex {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    }
+    
+h1 {
+    text-align: center;
+    font-family: Cambria;
+}
+
+h2 {
+    text-align: center;
+    font-size: xx-large;
+    font-family: Cambria;
+}
+h3 {
+    text-align: center;
+    font-family: Cambria;
+}
+#searchbar {
+    margin-left: 2%;
+}
+
+#info {
+    margin-top: 2%;
+}
+
+#goToPage1Button {
+    margin-left: 2%;
+    margin-top: 1%;
+    font-size: small;
+}
+   p{
+    margin-top: 2%;
+    padding: 2%;
+    font-family: Cambria;
+    font-size: large;
+   }

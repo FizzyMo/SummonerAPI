@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summoner Data</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+  </head>
+  <body>
+    <!-- background image -->
+    <img class="zindex" src="assets/images/pexels-zaksheuskaya-1568607.jpg"/>
+
+    <button class="small ui blue button" id="goToPage1Button">Summoner Search</button>
+    <button class="small ui blue button" id="goToPage2Button">Youtube Esports</button>
+    <button class="small ui blue button" id="goToPage3Button">Portfolio</button>
+    <button class="small ui blue button" id="goToPage4Button">About</button>
+    <h1>Grab Summoner Information</h1>
+    <label id="searchbar" for="summonerInput">Summoner Name:</label>
+    <input type="text" id="summonerInput" />
+
+    <!-- drop down list of regions -->
+    <label for="regionDropdown">Region:</label>
+    <select id="regionDropdown">
+      <option value="na1.api.riotgames.com">North America</option>
+      <option value="euw1.api.riotgames.com">Europe West</option>
+      <option value="eun1.api.riotgames.com">Europe Nordic & East</option>
+      <option value="br1.api.riotgames.com">Brazil</option>
+      <option value="jp1.api.riotgames.com">Japan</option>
+      <option value="kr.api.riotgames.com">Republic of Korea</option>
+      <option value="la1.api.riotgames.com">Latin America North</option>
+      <option value="la2.api.riotgames.com">Latin America South</option>
+      <option value="oc1.api.riotgames.com">Oceania</option>
+      <option value="tr1.api.riotgames.com">Turkey</option>
+      <option value="ru.api.riotgames.com">Russia</option>
+      <option value="ph2.api.riotgames.com">The Philippines</option>
+      <option value="sg2.api.riotgames.com">
+        Singapore, Malaysia, & Indonesia
+      </option>
+      <option value="th2.api.riotgames.com">Thailand</option>
+      <option value="tw2.api.riotgames.com">
+        Taiwan, Hong Kong, and Macao
+      </option>
+      <option value="vn2.api.riotgames.com">Vietnam</option>
+    </select>
+
+    <button id="fetchButton">Search</button>
+<!-- After search this is where information is displayed -->
+    <div id="summonerData">
+      <h3 id="info">Summoner Information:</h3>
+      <div id="summonerName"></div>
+      <div id="summonerLevel"></div>
+      <div id="summonerProfilePic"></div>
+      <div id="rankedData">
+        <div id="rankedWins"></div>
+        <div id="rankedLosses"></div>
+        <div id="rankedWinRatio"></div>
+      </div>
+      <div id="championMastery">
+        <h3>Champion Mastery:</h3>
+        <div id="championMasteryList"></div>
+      </div>
+    </div>
+
+    <script src="assets/javascript/script.js"></script>
+  </body>
+</html>
